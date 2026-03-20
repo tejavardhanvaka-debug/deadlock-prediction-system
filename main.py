@@ -19,7 +19,7 @@ for i in range(m):
     p1 = input("Process waiting: ")
     p2 = input("Waiting for process: ")
     G.add_edge(p1, p2)
-
+# DEADLOCk CHECK
 try:
     cycle = nx.find_cycle(G)
     print("🔴 Deadlock detected:", cycle)
